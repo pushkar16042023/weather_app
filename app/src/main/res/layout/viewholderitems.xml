@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="90dp"
+    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+
+
+    app:cardElevation="150dp"
+    app:cardCornerRadius="15dp"
+
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80000000">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvtime"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="time"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvtemp"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/rvtime"
+            android:fontFamily="sans-serif-light"
+            android:text="20"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/rvtemp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"
+            android:id="@+id/rvimage"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvwind"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rvimage"
+            android:gravity="center"
+            android:padding="15dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="13"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
